@@ -17,7 +17,6 @@ wget https://nodejs.org/download/release/v11.15.0/node-v11.15.0-linux-x64.tar.gz
 wget https://github.com/yarnpkg/yarn/releases/download/v1.22.4/yarn-v1.22.4.tar.gz
 tar -xvf node-v11.15.0-linux-x64.tar.gz && mv node-v11.15.0-linux-x64 ../node
 tar -xvf yarn-v1.22.4.tar.gz && mv yarn-v1.22.4 ../yarn
-export PATH=${PATH}:${HOMEDIR}/node/bin:${HOMEDIR}/yarn/bin
 cd ${HOMEDIR}
 
 # Export paths. Dependencies are pre-configured in the repo. 
@@ -25,7 +24,7 @@ export PKG_CONFIG_PATH=$HOMEDIR
 export CPATH=$HOMEDIR
 
 # Compile Theia and built extensions and examples
-cd theia && yarn
+cd theia && env PATH=${PATH}:${HOMEDIR}/node/bin:${HOMEDIR}/yarn/bin yarn
 
 # Cleanup
 cd ${HOMEDIR}
