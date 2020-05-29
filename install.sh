@@ -6,8 +6,8 @@
 #
 '
 
-$HOMEDIR=`pwd`
-$TMPDIR=${HOMEDIR}/tmp
+HOMEDIR=`pwd`
+TMPDIR=${HOMEDIR}/tmp
 mkdir -p ${TMPDIR}
 
 # Install nodejs v11.50 and Yarn
