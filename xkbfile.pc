@@ -1,0 +1,5 @@
+Name: xkbfile
+Description: The xkbfile Library
+Version: 1.0.9
+Requires: kbproto
+Requires.private: x11
