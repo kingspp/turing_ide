@@ -24,5 +24,5 @@ export PKG_CONFIG_PATH=$HOMEDIR
 export CPATH=$HOMEDIR
 
 # Compile Theia and built extensions and examples
-yarn
+cd theia && yarn
 
