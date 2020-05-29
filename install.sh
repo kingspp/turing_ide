@@ -22,9 +22,9 @@ cd ${HOMEDIR}
 # Export paths. Dependencies are pre-configured in the repo. 
 export PKG_CONFIG_PATH=$HOMEDIR
 export CPATH=$HOMEDIR
-
+export PATH=${HOMEDIR}/node/bin:${HOMEDIR}/yarn/bin:${PATH}
 # Compile Theia and built extensions and examples
-cd theia && env PATH=${PATH}:${HOMEDIR}/node/bin:${HOMEDIR}/yarn/bin yarn
+cd theia &&  yarn
 
 # Cleanup
 cd ${HOMEDIR}
