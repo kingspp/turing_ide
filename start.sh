@@ -9,4 +9,4 @@
 # Run IDE
 HOMEDIR=`pwd`
 cd ${HOMEDIR}/theia/examples/browser
-nohup yarn run start --port $1 &
+nohup PATH=${PATH}:${HOMEDIR}/node/bin:${HOMEDIR}/yarn/bin yarn run start --port $1 &
