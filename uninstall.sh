@@ -6,5 +6,7 @@
 #
 '
 
+rm -rf node node_modules yarn yarn.lock tmp
+
 # delete extracted rpm files
 # remove paths
