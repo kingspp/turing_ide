@@ -1,6 +1,8 @@
 # turing_ide
 Integrated Development Environment for WPI's turing clusters
 
+![Theia IDE](https://github.com/kingspp/turing_ide/blob/master/demo.png?raw=true)
+
 ## Installation
 Takes 10 mins so get a cup of coffee!
 
