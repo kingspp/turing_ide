@@ -14,9 +14,6 @@ sh install.sh
 # Start IDE
 sh start.sh 3000
 
-# Stop IDE
-sh stop.sh
-
-# Uninstall IDE
-sh uninstall.sh
+# On your localmachine
+ssh -N -f -L localhost:3000:localhost:3000 <username>@turing.wpi.edu
 ```
